@@ -314,6 +314,7 @@ node_modules/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
+.idea
 
 # Paket dependency manager
 .paket/paket.exe
