@@ -1,123 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playwrite+HU:wght@100..400&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color:whitesmoke;
+    color:white;
 }
 
 html {
-  background-color: #38324e;
-  padding: 1rem;
+    background-color: #38324e;
+    padding: 1rem;
 }
 
 .flex{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 0.75rem;
 }
 .flex-col{
     display: flex;
     flex-direction: column;
+    gap: .75rem;
 }
 .panel {
-  padding: 1rem;
-  border-radius: 8px;
-  background-color:rgba(64, 58, 96, 0.8) ;
+    font-family: Kodchasan, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color:rgba(64, 58, 96, 0.9) ;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 
+.panel > img {
+    width: 4rem;
+}
+.panel > h1 {
+    opacity: 0.95;
+    font-size: 3rem;
+    font-family: Kodchasan, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.thumbnail_pokemon{
+    border: #bbb 1px solid;
+    border-radius: 12px;
+    background-color: rgba(200, 200, 200, .15);
+
+}
+.thumbnail_pokemon > img{
+    margin: -0.33rem;
+    width: 5rem;
+
+}
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
 .column,
 .columns {
-  width: 100%;
-  float: left;
-  box-sizing: border-box; }
+    width: 100%;
+    float: left;
+    box-sizing: border-box; }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; }
+    .container {
+        width: 85%;
+        padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
-    width: 80%; }
-  .column,
-  .columns {
-    margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
+    .container {
+        width: 80%; }
+    .column,
+    .columns {
+        margin-left: 4%; }
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0; }
 
-  .one.column,
-  .one.columns                    { width: 4.66666666667%; }
-  .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
-  .seven.columns                  { width: 56.6666666667%; }
-  .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
-  .ten.columns                    { width: 82.6666666667%; }
-  .eleven.columns                 { width: 91.3333333333%; }
-  .twelve.columns                 { width: 100%; margin-left: 0; }
+    .one.column,
+    .one.columns                    { width: 4.66666666667%; }
+    .two.columns                    { width: 13.3333333333%; }
+    .three.columns                  { width: 22%;            }
+    .four.columns                   { width: 30.6666666667%; }
+    .five.columns                   { width: 39.3333333333%; }
+    .six.columns                    { width: 48%;            }
+    .seven.columns                  { width: 56.6666666667%; }
+    .eight.columns                  { width: 65.3333333333%; }
+    .nine.columns                   { width: 74.0%;          }
+    .ten.columns                    { width: 82.6666666667%; }
+    .eleven.columns                 { width: 91.3333333333%; }
+    .twelve.columns                 { width: 100%; margin-left: 0; }
 
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
+    .one-third.column               { width: 30.6666666667%; }
+    .two-thirds.column              { width: 65.3333333333%; }
 
-  .one-half.column                { width: 48%; }
+    .one-half.column                { width: 48%; }
 
-  /* Offsets */
-  .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: 8.66666666667%; }
-  .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: 17.3333333333%; }
-  .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: 26%;            }
-  .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
-  .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: 43.3333333333%; }
-  .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: 52%;            }
-  .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
-  .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
-  .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
-  .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+    /* Offsets */
+    .offset-by-one.column,
+    .offset-by-one.columns          { margin-left: 8.66666666667%; }
+    .offset-by-two.column,
+    .offset-by-two.columns          { margin-left: 17.3333333333%; }
+    .offset-by-three.column,
+    .offset-by-three.columns        { margin-left: 26%;            }
+    .offset-by-four.column,
+    .offset-by-four.columns         { margin-left: 34.6666666667%; }
+    .offset-by-five.column,
+    .offset-by-five.columns         { margin-left: 43.3333333333%; }
+    .offset-by-six.column,
+    .offset-by-six.columns          { margin-left: 52%;            }
+    .offset-by-seven.column,
+    .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+    .offset-by-eight.column,
+    .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+    .offset-by-nine.column,
+    .offset-by-nine.columns         { margin-left: 78.0%;          }
+    .offset-by-ten.column,
+    .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+    .offset-by-eleven.column,
+    .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
 
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+    .offset-by-one-third.column,
+    .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+    .offset-by-two-thirds.column,
+    .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
 
-  .offset-by-one-half.column,
-  .offset-by-one-half.columns     { margin-left: 52%; }
+    .offset-by-one-half.column,
+    .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB;
-  text-decoration: underline;
-  cursor: pointer;}
+    color: #1EAEDB;
+    text-decoration: underline;
+    cursor: pointer;}
 a:hover {
-  color: #0FA0CE; }
+    color: #0FA0CE; }
 
 
 /* Buttons
@@ -127,23 +156,22 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; }
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box; }
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -154,17 +182,17 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
-  outline: 0; }
+    color: #D1D1D1;
+    border-color: #888;
+    outline: 0; }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -175,9 +203,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB; }
 
 
 /* Forms
@@ -191,15 +219,15 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-size: inherit; /*https://stackoverflow.com/questions/6080413/why-doesnt-input-inherit-the-font-from-body*/}
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit; /*https://stackoverflow.com/questions/6080413/why-doesnt-input-inherit-the-font-from-body*/}
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -209,13 +237,13 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 textarea {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
 textarea {
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px; }
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px; }
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -225,22 +253,22 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
-  outline: 0; }
+    border: 1px solid #33C3F0;
+    outline: 0; }
 label,
 legend {
-  display: block;
-  margin-bottom: 0px; }
+    display: block;
+    margin-bottom: 0px; }
 fieldset {
-  padding: 0;
-  border-width: 0; }
+    padding: 0;
+    border-width: 0; }
 input[type="checkbox"],
 input[type="radio"] {
-  display: inline; }
+    display: inline; }
 label > .label-body {
-  display: inline-block;
-  margin-left: .5rem;
-  font-weight: normal; }
+    display: inline-block;
+    margin-left: .5rem;
+    font-weight: normal; }
 
 
 
