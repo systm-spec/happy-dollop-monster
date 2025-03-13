@@ -50,12 +50,10 @@ app.layout = [
 
                 html.Div(className='', children=[
                     html.H2('Pikachu'),
-                    html.P('Mouse Pokemon'),
-
+                    html.P('Mouse Pokemon')
                 ])
 
             ])
-
         ])
     ])
 ]

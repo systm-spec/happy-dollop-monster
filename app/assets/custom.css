@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playwrite+HU:wght@100..400&display=swap');
 
+
+/* ###############################
+   ########### RESETS ###########
+   ############################### */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +16,11 @@ html {
     background-color: #38324e;
     padding: 1rem;
 }
+
+
+/* ###############################
+   ########## Allgemein ##########
+   ############################### */
 
 .flex{
     display: flex;
@@ -53,8 +63,14 @@ html {
     width: 5rem;
 
 }
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+/* ###############################
+   ############ GRID #############
+   ############################### */
+
 .container {
     position: relative;
     width: 100%;
@@ -139,8 +155,10 @@ html {
 
 }
 
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ###############################
+   ############ LINKS ############
+   ############################### */
+
 a {
     color: #1EAEDB;
     text-decoration: underline;
@@ -149,8 +167,11 @@ a:hover {
     color: #0FA0CE; }
 
 
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* ###############################
+   ########### INPUTS ############
+   ############################### */
+
 .button,
 button,
 input[type="submit"],
@@ -208,8 +229,11 @@ input[type="button"].button-primary:focus {
     border-color: #1EAEDB; }
 
 
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* ###############################
+   ############ FORMS ############
+   ############################### */
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -273,15 +297,9 @@ label > .label-body {
 
 
 
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
+/* ###############################
+   ######### MEDIA QUERY #########
+   ############################### */
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
